@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Profile, Project.
+from .models import Profile, Project
 
 class ProfSerializer(serializers.ModelSerializer):
     class Meta:
