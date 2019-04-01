@@ -53,7 +53,7 @@
 
 ## Support and Contact details
 Incase of additions or if you run into any issues, my email address is: .iyerikuzweregine19@gmail.com
-.or call 0789140216.
+.or call 0789140216
 
 ## License
 
