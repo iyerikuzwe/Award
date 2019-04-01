@@ -43,7 +43,7 @@
    <p>{{ pro.rating.count }} <p style="color: dodgerblue;">Content</h5>  average = {{ pro.average_content | floatformat }} </p>
       </li>
   <li class="list-inline-item">
- <h4>Rate By Usability</h4>
+ <h4>Rate By Usability</h4>.
 <form  action="/project/{{pro.id}}/review_usability/" method="POST">
    {%csrf_token%}
    {% bootstrap_form form layout='inline' %}
