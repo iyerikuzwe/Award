@@ -26,7 +26,7 @@
     1) Clone the repo
     2) Create a virtual environment then pip install requirements.txt
     3) On your terminal route to the root folder then run: python manage.py runserver
- 4) Create database - on terminal, run `psql`
+    4) Create database - on terminal, run `psql`
  5) Create a .env file and add the following:
     i) SECRET_KEY = `<Secret_Key>`
    ii) DB_NAME = `<your_db_name`
