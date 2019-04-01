@@ -3,7 +3,7 @@ from .models import Profile, Project
 from django.contrib.auth.models import User
 
 
-class ProfileTestClass(TestCase):
+class ProfileTestClass(TestCase):.
     """
     Test profile class and its functions
     """
