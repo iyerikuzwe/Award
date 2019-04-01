@@ -35,7 +35,7 @@
    </li>
     <li class="list-inline-item">
  <h4>Rate By Content</h4>
-<form  action="/project/{{pro.id}}/review_content/" method="POST">
+<form  action="/project/{{pro.id}}/review_content/" method="POST">.
    {%csrf_token%}
    {% bootstrap_form form layout='inline' %}
    <input type="submit" value="Rate">
