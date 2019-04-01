@@ -29,7 +29,7 @@
 <form  action="/project/{{pro.id}}/review_design/" method="POST">
    {%csrf_token%}
    {% bootstrap_form form layout='inline' %}
-   <input type="submit" value="Rate">.
+   <input type="submit" value="Rate">
  </form>
    <p>{{ pro.rating.count }} <p style="color: dodgerblue;">Design</h5>  average = {{ pro.average_design | floatformat }} </p>
    </li>
