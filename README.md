@@ -21,7 +21,7 @@
 
 ### Set-Up
 
-To access this app on your local machine:
+    To access this app on your local machine:
 
  1) Clone the repo
  2) Create a virtual environment then pip install requirements.txt
