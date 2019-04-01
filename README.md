@@ -38,9 +38,9 @@
 
 ## Features
     1) Users can upload projects they've done
-2) Users can view their profiles
-3) User can rate/review each other's projects
-4) Authenticated users can view profile and project details using API
+    2) Users can view their profiles
+    3) User can rate/review each other's projects
+    4) Authenticated users can view profile and project details using API
 
 
 ### Known bugs
