@@ -23,7 +23,7 @@
 
     To access this app on your local machine:
 
- 1) Clone the repo
+    1) Clone the repo
  2) Create a virtual environment then pip install requirements.txt
  3) On your terminal route to the root folder then run: python manage.py runserver
  4) Create database - on terminal, run `psql`
