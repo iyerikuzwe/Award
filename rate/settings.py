@@ -136,23 +136,26 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 import django_heroku
 import dj_database_url
-from decouple import config, Csv
+from decouple import config,Csv
+
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 # development
-if config('MODE')=="dev":
+# if config('MODE')=="dev":
    DATABASES = {
        'default': {
            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-           'NAME': config('DB_NAME'),
-           'USER': config('DB_USER'),
-           'PASSWORD': config('DB_PASSWORD'),
+           'NAME':'rate',
+           'USER': 'wecode',
+           'PASSWORD':'regine1990',
+           'HOST': config('DB_HOST'),
+           'PORT': '',
        
        }    
    }
 # production
-else:
+# else:
    DATABASES = {
        'default': dj_database_url.config(
            default=config('DATABASE_URL')
@@ -161,7 +164,8 @@ else:
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
-ALLOWED_HOSTS = ['*']
+
+ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -174,8 +178,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-     'pro.apps.ProConfig',
-     'bootstrap3',
+    'pro.apps.ProConfig',
+    'bootstrap3',
     'rest_framework',
     'rest_framework.authtoken',
     'numpy',
