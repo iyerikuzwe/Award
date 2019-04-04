@@ -178,7 +178,7 @@ INSTALLED_APPS = [
      'bootstrap3',
     'rest_framework',
     'rest_framework.authtoken',
-    'numpy',
+    'numpy
    
 ]
 MIDDLEWARE = [
