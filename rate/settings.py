@@ -142,20 +142,20 @@ MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 # development
-# if config('MODE')=="dev":
-   DATABASES = {
+if config('MODE')=="dev":
+DATABASES = {
        'default': {
            'ENGINE': 'django.db.backends.postgresql_psycopg2',
            'NAME':'rate',
            'USER': 'wecode',
            'PASSWORD':'regine1990',
-           'HOST': config('DB_HOST'),
-           'PORT': '',
+        #    'HOST': config('DB_HOST'),
+        #    'PORT': '',
        
        }    
    }
 # production
-# else:
+else:
    DATABASES = {
        'default': dj_database_url.config(
            default=config('DATABASE_URL')
