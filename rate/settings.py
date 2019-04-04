@@ -16,7 +16,7 @@ import dj_database_url
 from decouple import config, Csv
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = True
 # development
 if config('MODE')=="dev":
    DATABASES = {
@@ -25,8 +25,7 @@ if config('MODE')=="dev":
            'NAME':'rate',
            'USER':'wecode',
            'PASSWORD':'regine',
-        #    'HOST': config('DB_HOST'),
-        #    'PORT': '',
+           'HOST':'localhost',
        }    
    }
 # production
@@ -39,7 +38,7 @@ else:
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
