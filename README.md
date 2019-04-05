@@ -1,7 +1,7 @@
 # author
     Iyerikuzwe Regine
 # project-name
-    award
+    ikuzweprojects
 # Project-description
 
     This is a website where users get to post previously done projects for review purposes. One posts a screenshot of the landing page, a brief description of the site, a title and a link to the site. The project is the rated based on three criteria, i.e Design, Usability and Content
